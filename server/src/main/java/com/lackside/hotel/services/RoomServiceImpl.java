@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.math.BigDecimal;
 import java.sql.Blob;
 import java.sql.SQLException;
+import java.util.List;
 
 import javax.sql.rowset.serial.SerialBlob;
 import javax.sql.rowset.serial.SerialException;
@@ -41,6 +42,12 @@ public class RoomServiceImpl implements IRoomService {
         Room roomSaved = this.roomRepository.save(roomBuilder.build());
 
         return roomSaved;
+    }
+
+    @Override
+    public List<Room> getRooms() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getRooms'");
     }
 
 }
